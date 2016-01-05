@@ -1,0 +1,39 @@
+{
+  "name": "posthtml-lorem",
+  "version": "1.0.0",
+  "description": "Add lorem ipsum placeholder text to any document",
+  "keywords": [
+    "posthtml",
+    "html",
+    "posthtml-plugin",
+    "lorems",
+    "ipsums",
+    "dolars",
+    "sits",
+    "amets",
+    "placeholders",
+    "texts"
+  ],
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jonathantneal/posthtml-lorem",
+  "homepage": "https://github.com/jonathantneal/posthtml-lorem#readme",
+  "bugs": "https://github.com/jonathantneal/posthtml-lorem/issues",
+  "dependencies": {
+    "posthtml": "^0.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.2.2"
+  },
+  "scripts": {
+    "lint": "eslint . --ignore-path .gitignore",
+    "tape": "tape test.js | tap-spec",
+    "test": "npm run lint && npm run tape"
+  },
+  "engines": {
+    "iojs": ">=2.0.0",
+    "node": ">=0.12.0"
+  }
+}
